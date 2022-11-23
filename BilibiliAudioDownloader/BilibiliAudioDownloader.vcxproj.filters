@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BilibiliAudioDownloader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Import\cpr\accept_encoding.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\api.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\async.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\auth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\bearer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\body.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\buffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\callback.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\cert_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\connect_timeout.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\cookies.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\cpr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\cprtypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\cprver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\curl_container.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\curlholder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\error.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\file.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\http_version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\interceptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\limit_rate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\local_port.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\local_port_range.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\low_speed.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\multipart.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\parameters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\payload.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\proxies.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\proxyauth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\range.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\redirect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\reserve_size.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\response.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\session.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\ssl_ctx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\ssl_options.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\status_codes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\threadpool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\timeout.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\unix_socket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\user_agent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\cpr\verbose.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\curl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\curlver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\easy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\header.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\mprintf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\multi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\options.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\stdcheaders.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\system.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\typecheck-gcc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\curl\urlapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Import\nlohmann\json.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\cli.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\requests.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\stringProcessing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\infoList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BilibiliAudioDownloader.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="BilibiliAudioDownloader.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BilibiliAudioDownloader.aps" />
+  </ItemGroup>
+</Project>
