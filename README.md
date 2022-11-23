@@ -50,6 +50,4 @@ BilibiliAudioDownloader.exe -f bvlist.txt
 - 最终音频文件将下载到download文件夹中
 
 ---
-=======
-BilibiliAudioDownloader-cpp 参考https://github.com/nuster1128/bilibiliAudioDownloader
->>>>>>> parent of 2cce0a0 (Merge branch 'main' of https://github.com/xialiag/BilibiliAudioDownloader-cpp)
+
