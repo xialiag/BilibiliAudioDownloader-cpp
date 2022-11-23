@@ -1,6 +1,4 @@
-# BilibiliAudioDownloader-cpp
-<<<<<<< HEAD
-BilibiliAudioDownloader-cpp 参考[bilibiliAudioDownloader](https://github.com/nuster1128/bilibiliAudioDownloader)
+# BilibiliAudioDownloader-cpp 参考[bilibiliAudioDownloader](https://github.com/nuster1128/bilibiliAudioDownloader)
 
 ## 主要功能
 输入视频BV号列表，批量下载B站视频中的音频到本地, 音质固定为最大192kbps
