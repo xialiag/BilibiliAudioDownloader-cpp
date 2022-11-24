@@ -28,7 +28,7 @@ namespace infoList {
 					std::string bv = option[0];
 					std::string pageOption = option[1];
 					if (stringProcessing::findStr(pageOption, "-") == std::string::npos) {
-						resultList.push_back(requests::getVedioInfo(bv, std::stoi(pageOption)));
+						resultList.push_back(requests::getVedioInfo(bv, std::stoi(pageOption), std::stoi(pageOption)));
 					}
 					else {
 						if (pageOption[pageOption.size() - 1] == '-') {
