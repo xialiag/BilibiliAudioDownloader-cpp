@@ -52,4 +52,4 @@ BilibiliAudioDownloader.exe -f bvlist.txt
 
 ---
 
-#已知问题: 当下载音频名称中含有emoji时无法写入音频文件,在修了(咕咕咕...)
+# 已知问题: 当下载音频名称中含有emoji时无法写入音频文件,在修了(咕咕咕...)
