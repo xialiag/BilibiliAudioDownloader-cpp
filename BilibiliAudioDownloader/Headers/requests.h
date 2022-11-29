@@ -149,7 +149,7 @@ namespace requests {
 			if (part == title) {
 				printf("Downloading: %s.%s.mp3\n", std::to_string(vedioInfo.page).c_str(), title.c_str());
 				std::string fileName = "./download/" + std::to_string(vedioInfo.page) + '.' + title + ".mp3";
-				of = std::ofstream(stringProcessing::UTF8ToGB(fileName.c_str()), std::ios::binary);
+				of.open(stringProcessing::UTF8ToUnicode(fileName), std::ios::binary);
 			}
 			else {
 				printf("Downloading: %s %s.%s.mp3\n", title.c_str(), std::to_string(vedioInfo.page).c_str(), part.c_str());
@@ -158,7 +158,7 @@ namespace requests {
 					_mkdir(stringProcessing::UTF8ToGB(prefix.c_str()).c_str());
 				}
 				std::string fileName = "./download/" + title + '/' + std::to_string(vedioInfo.page) + '.' + part + ".mp3";
-				of = std::ofstream(stringProcessing::UTF8ToGB(fileName.c_str()).c_str(), std::ios::binary);
+				of.open(stringProcessing::UTF8ToUnicode(fileName), std::ios::binary);
 			}
 			cpr::Response res = cpr::Download(of,
 				cpr::Url{ audioURL },
