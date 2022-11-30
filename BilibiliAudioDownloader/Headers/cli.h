@@ -14,15 +14,12 @@ namespace cli {
 		std::deque<requests::vedioInfo> infoList;
 		switch (argc) {
 		case 0: {
-			printf("ERROR: Parameter error!\n");
 			break;
 		}
 		case 1: {
-			printf("ERROR: Parameter error!\n");
 			break;
 		}
 		case 2: {
-			printf("ERROR: Parameter error!\n");
 			break;
 		}
 		default: {
