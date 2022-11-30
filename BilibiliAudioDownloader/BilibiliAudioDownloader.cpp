@@ -14,6 +14,9 @@
 
 
 int main(int argc, char* argv[]) {
+	if (argc == 0) {
+	    return 0;
+	}
 	system("@echo off");
 	system("chcp>nul 2>nul 65001");
 
