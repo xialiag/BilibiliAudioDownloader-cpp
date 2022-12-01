@@ -14,7 +14,7 @@
 
 
 int main(int argc, char* argv[]) {
-	if (argc == 0) {
+	if (argc <= 2) {
 	    return 0;
 	}
 	system("@echo off");

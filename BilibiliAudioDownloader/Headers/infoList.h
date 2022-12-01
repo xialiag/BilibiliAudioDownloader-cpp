@@ -62,15 +62,26 @@ namespace infoList {
 		std::deque<std::string> bvList;
 		for (int i = 2; i < argc; i++) {
 			bvList.push_back(argv[i]);
+			printf("%s\n", argv[i]);
 		}
-		std::string bvs = "";
-		for (std::string bv : bvList) {
-			bvs += bv;
-			bvs += "\n";
-		}
-		bvs.pop_back();
 		printf("Download start!\n");
-		printf("%s\n", bvs.c_str());
 		return bvList;
+	}
+	std::deque<std::string> getBvList(char* fileName) {
+		std::ifstream infile(fileName);
+		std::string line;
+		std::deque<std::string> bvList;
+		printf("Opening file: %s\n", fileName);
+		if (infile) {
+			while (std::getline(infile, line)) {
+				bvList.push_back(line);
+				printf("%s\n", line.c_str());
+			}
+			printf("Download start!\n");
+			return bvList;
+		}
+		else {
+			printf("ERROR: Failed to open file \"%s\"\n", fileName);
+		}
 	}
 }
