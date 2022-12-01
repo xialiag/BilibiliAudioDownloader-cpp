@@ -11,7 +11,6 @@
 
 namespace cli {
 	std::deque<requests::vedioInfo> cli(int argc, char* argv[]) {
-		std::deque<requests::vedioInfo> infoList;
 		switch (argc) {
 		case 0: {
 			break;
