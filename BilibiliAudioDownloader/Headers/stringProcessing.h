@@ -138,10 +138,10 @@ namespace stringProcessing {
 	std::string strRepair(std::string &str) {
 		stringProcessing::deleteStr(str, "/", "-");
 		stringProcessing::deleteStr(str, "\\", " ");
-		stringProcessing::deleteStr(str, "?", "£¿");
-		stringProcessing::deleteStr(str, ":", "£º");
+		stringProcessing::deleteStr(str, "?", " ");
+		stringProcessing::deleteStr(str, ":", " ");
 		stringProcessing::deleteStr(str, "*", " ");
-		stringProcessing::deleteStr(str, "\"", "¡°");
+		stringProcessing::deleteStr(str, "\"", " ");
 		stringProcessing::deleteStr(str, "<", " ");
 		stringProcessing::deleteStr(str, ">", " ");
 		stringProcessing::deleteStr(str, "|", " ");
