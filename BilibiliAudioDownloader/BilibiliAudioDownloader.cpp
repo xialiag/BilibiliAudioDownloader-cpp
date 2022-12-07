@@ -28,11 +28,19 @@ int main(int argc, char* argv[]) {
 	clock_t startTime;
 	startTime = clock();
 
-	std::deque<requests::vedioInfo> infoList = cli::cli(argc, argv);
+	bool transcodingOpinion = false;
+	std::deque<requests::vedioInfo> infoList = cli::cli(argc, argv, transcodingOpinion);
+
+	if (transcodingOpinion) {
+		std::string transcodingPath = "./transcoded/";
+		if (_access(transcodingPath.c_str(), 0) == -1) {
+			_mkdir(transcodingPath.c_str());
+		}
+	}
 	for (requests::vedioInfo eachInfo : infoList) {
 		printf("%s.%s\n", std::to_string(eachInfo.page).c_str(), eachInfo.part.c_str());
 	}
-	requests::getAudio(infoList);
+	requests::getAudio(infoList, transcodingOpinion);
 
 	clock_t endTime;
 	endTime = clock();

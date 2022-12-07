@@ -133,7 +133,7 @@ namespace requests {
 			printf("ERROR: Empty data!\n");
 		}
 	}
-	void getAudio(std::deque<requests::vedioInfo> infoList) {
+	void getAudio(std::deque<requests::vedioInfo> infoList,bool transcodingOpinion) {
 		for (requests::vedioInfo& vedioInfo : infoList) {
 			clock_t startTime;
 			startTime = clock();
@@ -172,6 +172,8 @@ namespace requests {
 					{"Origin", "https://www.bilibili.com"},
 					{"Connection", "keep-alive"}
 				});
+			of.close();
+			of.clear();
 			clock_t endTime;
 			endTime = clock();
 			std::string Duration = stringProcessing::round(std::to_string(endTime - startTime));
@@ -181,7 +183,24 @@ namespace requests {
 			else {
 				printf("%s seconds download finish: %s %s.%s.mp3\n", Duration.c_str(), title.c_str(), std::to_string(vedioInfo.page).c_str(), part.c_str());
 			}
-
+			if (transcodingOpinion) {
+				std::string originalPath;
+				std::string outPutPath;
+				if (title == part) {
+					originalPath = "./download/" + std::to_string(vedioInfo.page) + '.' + title + ".mp3";
+					outPutPath = "./transcoded/" + std::to_string(vedioInfo.page) + '.' + title + ".mp3";
+				}
+				else {
+					originalPath = "./download/" + title + '/' + std::to_string(vedioInfo.page) + '.' + part + ".mp3";
+					outPutPath = "./transcoded/" + title + '/' + std::to_string(vedioInfo.page) + '.' + part + ".mp3";
+				}
+				std::string prefix = "./transcoded/" + title + '/';
+				if (_access(stringProcessing::UTF8ToGB(prefix.c_str()).c_str(), 0) == -1) {
+					_mkdir(stringProcessing::UTF8ToGB(prefix.c_str()).c_str());
+				}
+				std::string cmd = "NoWindowStartup.exe -p \"ffmpeg -i \\\"" + originalPath + "\\\" -acodec libmp3lame -ab 192k -ac 2 \\\"" + outPutPath + "\\\"\"";
+				system(stringProcessing::UTF8ToGB(cmd.c_str()).c_str());
+			}
 			Sleep(1);
 		}
 	}
